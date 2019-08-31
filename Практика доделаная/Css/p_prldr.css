@@ -1,0 +1,42 @@
+#p_prldr
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    background-image: url(../Фото/vint4.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 30;
+}
+     
+    .contpre small{font-size:25px;}
+     
+    .contpre
+    {
+        width: 250px;
+        height: 100px;
+        position: absolute;
+        left: 50%;top: 48%;
+        margin-left:-125px;
+        margin-top:-75px;
+        color:black;
+        font-size:40px;
+        letter-spacing:-2px;
+        text-align:center;
+        line-height:35px;
+        transform: scale(1.8);
+    }
+     
+    #p_prldr #svg_anm 
+    {
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        background: url(../Фото/spinning-circles.svg) center center no-repeat;
+        background-size:41px;    
+        margin: -16px 0 0 -16px;
+    }

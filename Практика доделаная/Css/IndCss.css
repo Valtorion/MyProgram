@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    background-image: url(../Фото/vint3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#central
+{
+    text-align: center;
+    display: table;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-family: 'Caveat', cursive;
+}
+
+#central1
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+form
+{
+    font-size: 26px;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    background-image: url(../Фото/s1200.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 12%;
+
+}
+
+
+
+#points
+{
+    list-style-type:none;
+    list-style-position:outside;
+    display: table;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 70%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    
+
+}
+
+#points li
+{
+    display: table-row;
+    text-align: left;
+    border: 2px solid black;
+}
+
+label, select
+{
+    padding-top: 10px;
+    display: table-cell;
+    border: 2px solid black;
+    vertical-align: bottom;
+    padding-right: 10px;
+}
+
+label
+{
+    width: auto;
+}
+
+
+h1{
+    font-size: 44px;
+    width: 70%;
+    border-bottom: 6px solid black;
+    display: inline-block;
+}
+
+.Submit
+{
+    padding: .7em 3em;
+    opacity: 1;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    
+    transition: 0.2s;
+    border: 8px solid black;
+    background: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+
+.Submit:hover
+{
+    transform: scale(1.2);
+}
+
+select, .inp
+{
+    width: 100%;
+    background: none;
+    color: #32353a;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: normal;
+    padding: 7px 10px 7px 10px;
+    height: 100%;
+    border: none;
+    
+}
