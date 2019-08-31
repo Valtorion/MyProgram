@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Дневник для студентов</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="Css/ResultCss.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/p_prldr.css">
+    <script src="JS/preloader.js"></script>
+</head>
+
+<body>
+
+        <div id="p_prldr"><div class="contpre"><span id="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
+
+        <div id="envelope" class="envelope">
+        <a class="close-btn" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'">Закрыть</a>
+        <h1 id="titleF1">Добавить домашнее задание</h1>
+        
+		<form id="form1">
+
+                <ul id="points">
+                    <li>
+                        <label for="Fac">Факультет</label>
+                        <select id="Fac" name="Fac" onclick="GetForm('Специальность', '')">
+                            <option selected disabled>Выберите факультет</option>   
+                        </select>
+                    </li>
+                    
+                    <li>
+                        <label for="Spec">Специальность</label>
+                        <select id="Spec" name="Spec" onclick="GetForm('Группа', '')">
+                            <option selected disabled>Выберите cпециальность</option>  
+                        </select>
+                    </li>
+                    
+                    <li>
+                        <label for="Group">Группа</label>
+                        <select id="Group" name="Group" onclick="GetForm('Предмет', '')">
+                            <option selected disabled>Выберите группу</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="Obj">Предмет</label>
+                        <select id="Obj" name="Obj">
+                            <option selected disabled>Выберите предмет</option>
+                        </select>
+                    </li>
+
+                    <li>
+                            <label for="date">Дата</label>
+                            <input type="date" id="date" name="date">
+                    </li>
+                    
+                </ul>
+                <textarea id="DZtext" placeholder="Введите домашнее задание"></textarea>
+
+		     
+		     <input type="button" name="send" value="Отправить" id="send-message" onclick="AddDZ()">
+        </form>
+	    </div>
+       <div id="fade" class="black-overlay"></div>
+       
+       
+    <header>
+        <h1>Дневник для студентов</h1>
+    </header>
+
+    <div id="main">
+        <div id="mainS">
+
+        <form id="search">
+            <h1>Расписание домаших заданий</h1>
+            <input type="date" id="in">
+            <select id="opt" onclick="SwitchElem()">
+                <option selected>По числу</option>
+                <option>По предмету</option>
+            </select>
+            <input type="button" id="Ok" value="Поиск" onclick="SearchDZ()">
+        </form>
+
+        
+        <div id="tb1" class="tables">
+            <table name="tb1">
+                <tr><th colspan="2">Понедельник <span id="data">01 июля 2019</span></th></tr>
+                <tr>
+                    <td>Физра</td>
+                    <td><textarea class="dz" name="dz">Ничего не задано</textarea></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="tb2" class="tables">
+                <table id = "table1" name="tb1">
+                    <tr><th colspan="2">Понедельник <span id="data">01 июля 2019</span></th></tr>
+                    <tr>
+                        <td>Физра</td>
+                        <td><textarea class="dz" name="dz">Ничего не задано</textarea></td>
+                    </tr>
+    
+                </table>
+        </div>
+        <div id="buts">
+            <input type="button" class="butt" id="prev" name="prev" value="Предыдушее" onclick = "Prev()">
+            <input type="button" class="butt" id="create" name="create" value="Добавить запись" onclick = "ShowForm()">
+            <input type="button" class="butt" id="chanche" name="create" value="Изменить запись" onclick = "ChancheBut()">
+            <input type="button" class="butt" id="del" name="create" value="Удалить запись" onclick = "DeleteDZ()">
+            <input type="button" class="butt" id="next" name="next" value="Следующее" onclick = "Next()">
+        </div>
+
+        
+        </div>
+
+    </div>
+
+</body>
+
+<script src="JS/res.js"></script>
+</html>

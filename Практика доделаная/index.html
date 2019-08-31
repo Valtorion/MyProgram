@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="Css/IndCss.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title>Дневник для студентов</title>
+       
+</head>
+
+<body>
+    <div id="central">
+        <div id="central1">
+
+        
+        <form id="form1">
+            <h1>Дневник для студентов</h1>
+
+            
+
+            <ul id="points">
+            <li>
+                <label for="Fac">Факультет</label>
+                <select id="Fac" name="Fac" onclick="GetForm('Специальность', '')">
+                    <option selected disabled>Выберите факультет</option>   
+                </select>
+            </li>
+            
+            <li>
+                <label for="Spec">Специальность</label>
+                <select id="Spec" name="Spec" onclick="GetForm('Группа', '')">
+                    <option selected disabled>Выберите cпециальность</option>  
+                </select>
+            </li>
+            
+            <li>
+                <label for="Group">Группа</label>
+                <select id="Group" name="Group">
+                    <option selected disabled>Выберите группу</option>
+                </select>
+            </li>
+            
+            <li>
+                <label for="fname">Фамилия</label>
+                <input class="inp" type="text" id="fname" name="fname" required placeholder="Введите фамилию студента">
+            </li>
+            
+            <li>
+                <label for="name">Имя</label>
+                <input class="inp" type="text" id="name" name="name" required placeholder="Введите имя студента">
+            </li>
+            </ul>
+            
+            <input type="button" class="Submit" value="Войти" onclick="UniFunc('login')">
+            <input type="button" class="Submit" value="Добавить студента" onclick="UniFunc('AddStudent')">
+        </form>
+        </div>
+    </div>
+    <script src="JS/Form.js"></script> 
+</body>
+
+</html>
